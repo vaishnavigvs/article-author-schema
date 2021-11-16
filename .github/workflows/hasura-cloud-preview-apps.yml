@@ -22,7 +22,7 @@ jobs:
           hasuraEnv: |
             ENV_VAR_TEST=value_test
           postgresDBConfig: |
-            POSTGRES_SERVER_CONNECTION_URI=${{secrets.PG_STRING}}
+            POSTGRES_SERVER_CONNECTION_URI=${{secrets.POSTGRES_SERVER_CONNECTION_URI}}
             PG_ENV_VARS_FOR_HASURA=PG_DATABASE_URL
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
