@@ -26,7 +26,7 @@ jobs:
             PG_ENV_VARS_FOR_HASURA=PG_DATABASE_URL
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          HASURA_CLOUD_ACCESS_TOKEN: ${{secrets.HASURA_CLOUD_ACCESS_TOKEN_PROD}}
+          HASURA_CLOUD_ACCESS_TOKEN: ${{secrets.HASURA_CLOUD_ACCESS_TOKEN}}
 
       - uses: hasura/comment-progress@v2.1.0
         if: ${{github.event.number != ''}}
